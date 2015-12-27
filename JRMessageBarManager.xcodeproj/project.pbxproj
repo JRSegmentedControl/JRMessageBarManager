@@ -13,6 +13,13 @@
 		340A41E61C2FFA3A00839D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340A41E41C2FFA3A00839D67 /* Main.storyboard */; };
 		340A41E81C2FFA3A00839D67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340A41E71C2FFA3A00839D67 /* Assets.xcassets */; };
 		340A41EB1C2FFA3A00839D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 340A41E91C2FFA3A00839D67 /* LaunchScreen.storyboard */; };
+		340A41F61C2FFC4E00839D67 /* JRMessageBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 340A41F51C2FFC4E00839D67 /* JRMessageBarManager.m */; };
+		340A41FE1C30163000839D67 /* icon-error.png in Resources */ = {isa = PBXBuildFile; fileRef = 340A41F81C30163000839D67 /* icon-error.png */; };
+		340A41FF1C30163000839D67 /* icon-error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 340A41F91C30163000839D67 /* icon-error@2x.png */; };
+		340A42001C30163000839D67 /* icon-info.png in Resources */ = {isa = PBXBuildFile; fileRef = 340A41FA1C30163000839D67 /* icon-info.png */; };
+		340A42011C30163000839D67 /* icon-info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 340A41FB1C30163000839D67 /* icon-info@2x.png */; };
+		340A42021C30163000839D67 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = 340A41FC1C30163000839D67 /* icon-success.png */; };
+		340A42031C30163000839D67 /* icon-success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 340A41FD1C30163000839D67 /* icon-success@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +33,15 @@
 		340A41E71C2FFA3A00839D67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		340A41EA1C2FFA3A00839D67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		340A41EC1C2FFA3A00839D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		340A41F41C2FFC4E00839D67 /* JRMessageBarManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRMessageBarManager.h; sourceTree = "<group>"; };
+		340A41F51C2FFC4E00839D67 /* JRMessageBarManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRMessageBarManager.m; sourceTree = "<group>"; };
+		340A41F81C30163000839D67 /* icon-error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error.png"; sourceTree = "<group>"; };
+		340A41F91C30163000839D67 /* icon-error@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-error@2x.png"; sourceTree = "<group>"; };
+		340A41FA1C30163000839D67 /* icon-info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info.png"; sourceTree = "<group>"; };
+		340A41FB1C30163000839D67 /* icon-info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-info@2x.png"; sourceTree = "<group>"; };
+		340A41FC1C30163000839D67 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
+		340A41FD1C30163000839D67 /* icon-success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success@2x.png"; sourceTree = "<group>"; };
+		34B0F4EC1C3035B100FCA3D3 /* StringConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +74,9 @@
 		340A41DA1C2FFA3A00839D67 /* JRMessageBarManager */ = {
 			isa = PBXGroup;
 			children = (
-				340A41DE1C2FFA3A00839D67 /* AppDelegate.h */,
-				340A41DF1C2FFA3A00839D67 /* AppDelegate.m */,
-				340A41E11C2FFA3A00839D67 /* ViewController.h */,
-				340A41E21C2FFA3A00839D67 /* ViewController.m */,
-				340A41E41C2FFA3A00839D67 /* Main.storyboard */,
-				340A41E71C2FFA3A00839D67 /* Assets.xcassets */,
-				340A41E91C2FFA3A00839D67 /* LaunchScreen.storyboard */,
-				340A41EC1C2FFA3A00839D67 /* Info.plist */,
+				340A41F71C30163000839D67 /* Icons */,
+				340A41F31C2FFC2A00839D67 /* JRMessageBarManager */,
+				340A41F21C2FFA7700839D67 /* Classes */,
 				340A41DB1C2FFA3A00839D67 /* Supporting Files */,
 			);
 			path = JRMessageBarManager;
@@ -74,9 +85,47 @@
 		340A41DB1C2FFA3A00839D67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				340A41E41C2FFA3A00839D67 /* Main.storyboard */,
+				340A41E71C2FFA3A00839D67 /* Assets.xcassets */,
+				340A41E91C2FFA3A00839D67 /* LaunchScreen.storyboard */,
+				340A41EC1C2FFA3A00839D67 /* Info.plist */,
 				340A41DC1C2FFA3A00839D67 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		340A41F21C2FFA7700839D67 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				340A41DE1C2FFA3A00839D67 /* AppDelegate.h */,
+				340A41DF1C2FFA3A00839D67 /* AppDelegate.m */,
+				340A41E11C2FFA3A00839D67 /* ViewController.h */,
+				340A41E21C2FFA3A00839D67 /* ViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		340A41F31C2FFC2A00839D67 /* JRMessageBarManager */ = {
+			isa = PBXGroup;
+			children = (
+				34B0F4EC1C3035B100FCA3D3 /* StringConstants.h */,
+				340A41F41C2FFC4E00839D67 /* JRMessageBarManager.h */,
+				340A41F51C2FFC4E00839D67 /* JRMessageBarManager.m */,
+			);
+			name = JRMessageBarManager;
+			sourceTree = "<group>";
+		};
+		340A41F71C30163000839D67 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				340A41F81C30163000839D67 /* icon-error.png */,
+				340A41F91C30163000839D67 /* icon-error@2x.png */,
+				340A41FA1C30163000839D67 /* icon-info.png */,
+				340A41FB1C30163000839D67 /* icon-info@2x.png */,
+				340A41FC1C30163000839D67 /* icon-success.png */,
+				340A41FD1C30163000839D67 /* icon-success@2x.png */,
+			);
+			path = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +186,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				340A41EB1C2FFA3A00839D67 /* LaunchScreen.storyboard in Resources */,
+				340A41FE1C30163000839D67 /* icon-error.png in Resources */,
+				340A42021C30163000839D67 /* icon-success.png in Resources */,
+				340A42001C30163000839D67 /* icon-info.png in Resources */,
+				340A42011C30163000839D67 /* icon-info@2x.png in Resources */,
+				340A42031C30163000839D67 /* icon-success@2x.png in Resources */,
 				340A41E81C2FFA3A00839D67 /* Assets.xcassets in Resources */,
 				340A41E61C2FFA3A00839D67 /* Main.storyboard in Resources */,
+				340A41FF1C30163000839D67 /* icon-error@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				340A41E31C2FFA3A00839D67 /* ViewController.m in Sources */,
+				340A41F61C2FFC4E00839D67 /* JRMessageBarManager.m in Sources */,
 				340A41E01C2FFA3A00839D67 /* AppDelegate.m in Sources */,
 				340A41DD1C2FFA3A00839D67 /* main.m in Sources */,
 			);
@@ -300,6 +356,7 @@
 				340A41F11C2FFA3A00839D67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "StringConstants.h"
+#import "JRMessageBarManager.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,18 @@
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+	self.view.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning];
-	// Dispose of any resources that can be recreated.
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+	[[JRMessageBarManager sharedManager] showMessageWithTitle:kStringMessageBarErrorTitle
+												   description:kStringMessageBarErrorMessage
+														  type:JRMessageBarMessageTypeError
+												statusBarStyle:UIStatusBarStyleLightContent
+													  callback:^{
+														  NSLog(@"SUCCESS");
+													  }];
 }
 
 @end
